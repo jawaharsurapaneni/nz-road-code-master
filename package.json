@@ -1,0 +1,23 @@
+{
+  "name": "nz-road-code-master",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "NZ Road Code Master - Theory & Restricted Test Prep. Standalone offline study app.",
+  "scripts": {
+    "validate": "node tools/validate.mjs",
+    "test": "node tools/test-core.mjs",
+    "test:bundle": "node tools/test-bundle.mjs",
+    "build": "node tools/build.mjs",
+    "report": "node tools/report.mjs",
+    "all": "node tools/validate.mjs && node tools/check-contrast.mjs && node tools/test-core.mjs && node tools/build.mjs && node tools/test-bundle.mjs && node tools/test-render.mjs && node tools/report.mjs",
+    "test:render": "node tools/test-render.mjs",
+    "check:contrast": "node tools/check-contrast.mjs",
+    "build:web": "node tools/build.mjs --out public/index.html"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18"
+  }
+}

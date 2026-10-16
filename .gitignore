@@ -1,0 +1,18 @@
+# Build output for deployment. The committed deliverable is
+# nz-road-code-master.html at the repo root; public/index.html is generated
+# from it at deploy time by tools/build.mjs.
+public/
+
+# Vercel
+.vercel/
+
+# Dependencies (there are none, but npm install creates this on Vercel)
+node_modules/
+
+# Local noise
+.DS_Store
+.idea/
+*.log
+
+# JetBrains module file
+NZRoadCode.iml
